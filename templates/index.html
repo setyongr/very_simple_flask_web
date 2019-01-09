@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+  <a href="/login">Login</a>
+  <a href="/logout">Logout</a>
+  {% if g.user %}
+    <a href="/secret">Secret</a>
+  {% endif %}
+  <a href="/create_user">Create User</a>
+{% endblock %}
